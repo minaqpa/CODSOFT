@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+        margin: 0;
+         padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins' sans-serif;
+  
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+   background-image: linear-gradient(rgba(75, 75, 75, 0.7), rgba(91, 90, 90, 0.7)),url(./Image/slide5.jpg); 
+   background-size: 100% 100%;
+
+}
+/* Navbar section Start */
+.navbar{
+    width:90%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 110px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+ 
+}
+
+.navbar ul li::after{
+  content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(27, 196, 208);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    
+}
+/* Navbar section End */
+
+/* Slider Section Start */
+
+.places{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.3rem;
+    color: white;
+}
+.slider{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    top: 60%;
+        transform: translate(-50%, -50%);
+        background-image: url(./Image/bg.jpg);
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px 5px rgb(176, 165, 165);
+        animation: slider 15s infinite linear;
+}
+@keyframes slider{
+  0%{background-image: url(./Image/bg.jpg);}
+  20%{background-image: url(./Image/slide1.jpg);}
+  40%{background-image: url(./Image/slide2.jpg);}
+  60%{background-image: url(./Image/slide3.jpeg);}
+  80%{background-image: url(./Image/slide4.jpg);
+      }
+  
+  
+}
+
+/* Slider Section End */
+
+/*  package section start*/
+.Package-head{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.3rem;
+    color: rgb(0, 0, 0);
+}
+.package {
+    width:60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-wrap: nowrap; 
+    gap: 30px;
+    perspective: 1000px;
+}
+
+.package-inner{
+    color: white;
+    flex: 1 0 300px;
+    /* display: flex; */
+    height: 400px;
+    background-color: rgb(85, 122, 154);
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 5px rgb(176, 165, 165);
+    overflow: hidden;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out ;
+}
+
+.package-inner:hover{
+    transform: scale(1.05);
+}
+
+.package-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+   transition: 0.3s ease;
+}
+.package-content h1,h3{
+    margin-bottom: 10px;
+
+}
+
+/*  package section End*/
+
+/* contact us section start */
+.contactUs{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 0.3rem;
+    color: rgb(0, 0, 0);
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c7c3c3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 15px;
+    background-color:rgb(207, 210, 217);
+
+    /* background-color: #e8e1e1; */
+  }
+  label{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;   
+    width: 20%;
+   
+   }
+
+input[type=submit]:hover {
+   background-color: #4ca987;
+}
+
+  .contact {
+    border-radius: 5px;
+    background-color: rgb(85, 122, 154);
+    /* background-color: rgb(132, 146, 163); */
+    padding: 20px;
+    width: 50%;
+   margin: 20px auto;
+   box-shadow: 1px 2px 10px 5px rgb(188, 181, 181);
+  }
+/* contact us section end */
+
+/* Footer Section Start */
+footer {
+    margin-top: 3rem;
+    /* margin-bottom: 1rem; */
+    padding-top: 18px;
+    text-align: center;
+    width: 100%;
+    background-color:rgb(60, 134, 171);
+    height: 50px;
+    font-size: large;
+
+}
+footer p{
+    color: white;
+}
+/* Footer Section End */
